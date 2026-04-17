@@ -1,4 +1,36 @@
 # _config.yml
-theme: jekyll-theme-merlot
+remote_theme: mmistakes/minimal-mistakes
+
 title: Wanfang's Learning Log
 description: 关于我试图用博客治好健忘症这档事
+
+# 插件配置
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
+
+# 主题皮肤
+minimal_mistakes_skin: "mint"
+
+# 开启搜索
+search: true
+
+# 分页配置（每页显示文章数）
+paginate: 10
+paginate_path: "/page:num/"
+
+# 分类归档配置（让主题自动生成分类页面）
+category_archive:
+  type: liquid
+  path: /categories/
+
+# 侧边栏配置（自动显示分类导航）
+defaults:
+  - scope:
+      path: ""
+    type: posts
+    values:
+      sidebar:
+        nav: "categories"   # 使用主题内置的分类导航
