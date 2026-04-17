@@ -2,11 +2,9 @@
 layout: default
 ---
 
-# 我的学习博客
-
-## 测试框架
+# 测试框架
 
 - [pytest 学习笔记](测试框架/pytest.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzUyOTQ3MzksMTY4ODUyNzM1XX0=
+eyJoaXN0b3J5IjpbLTEyMzg4NzgxMTQsMTY4ODUyNzM1XX0=
 -->
