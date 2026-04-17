@@ -1,6 +1,6 @@
 ---
 title: "分类目录"
-layout: categories
+layout: single
 permalink: /categories/
 author_profile: true
 sidebar:
