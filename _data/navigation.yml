@@ -1,31 +1,19 @@
-# 主菜单导航栏（顶部显示）
-main:
-  - title: "首页"
-    url: "/"
-  - title: "博客"
-    url: "/year-archive/"
+# 侧边栏博客导航
+blog:
+  - title: "📂 分类目录"
     children:
-      - title: "分类"
-        url: "/categories/"
-      - title: "标签"
-        url: "/tags/"
-      - title: "归档"
-        url: "/year-archive/"
-  - title: "关于"
-    url: "/about/"
-
-# 侧边栏导航（可选，用于特定页面）
-docs:
-  - title: "快速开始"
-    children:
-      - title: "关于本站"
-        url: "/about/"
-      - title: "分类导航"
-        url: "/categories/"
+      - title: "编程技术"
+        url: /categories/#编程技术
+      - title: "学习笔记"
+        url: /categories/#学习笔记
+      - title: "生活记录"
+        url: /categories/#生活记录
   
-  - title: "博客索引"
+  - title: "🏷️ 热门标签"
     children:
-      - title: "最新文章"
-        url: "/"
-      - title: "按标签浏览"
-        url: "/tags/"
+      - title: "#Python"
+        url: /tags/#python
+      - title: "#Git"
+        url: /tags/#git
+      - title: "#Markdown"
+        url: /tags/#markdown
