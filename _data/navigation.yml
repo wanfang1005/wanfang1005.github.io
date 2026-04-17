@@ -1,19 +1,19 @@
-# 侧边栏博客导航
+# 侧边栏博客导航 - 基于 Collections 动态生成
 blog:
   - title: "📂 分类目录"
     children:
-      - title: "编程技术"
-        url: /categories/#编程技术
-      - title: "学习笔记"
-        url: /categories/#学习笔记
-      - title: "生活记录"
-        url: /categories/#生活记录
+      {% for collection in site.collections %}
+      {% if collection.output and collection.label != 'posts' %}
+      - title: "{{ collection.title | default: collection.label }}"
+        url: /{{ collection.label }}/
+      {% endif %}
+      {% endfor %}
   
   - title: "🏷️ 热门标签"
     children:
-      - title: "#Python"
-        url: /tags/#python
-      - title: "#Git"
-        url: /tags/#git
-      - title: "#Markdown"
-        url: /tags/#markdown
+      {% for tag in site.tags %}
+      {% if forloop.index <= 10 %}
+      - title: "#{{ tag[0] }}"
+        url: /tags/#{{ tag[0] | slugify }}
+      {% endif %}
+      {% endfor %}

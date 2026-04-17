@@ -1,4 +1,21 @@
 # ===============================
+# Collections 配置
+# ===============================
+collections:
+  TestFramework:
+    title: "🧪 测试框架"
+    output: true
+    permalink: /:collection/:path/
+  Anthropology:
+    title: "🏛️ 人类学"
+    output: true
+    permalink: /:collection/:path/
+  Language:
+    title: "🗣️ 语言学习"
+    output: true
+    permalink: /:collection/:path/
+
+# ===============================
 # 基本信息
 # ===============================
 title: "Wanfang's Learning Log"
@@ -63,6 +80,36 @@ defaults:
       comments: false
       share: false
       related: true
+  - scope:
+      path: ""
+      type: TestFramework
+    values:
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true
+      sidebar:
+        nav: "blog"
+  - scope:
+      path: ""
+      type: Anthropology
+    values:
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true
+      sidebar:
+        nav: "blog"
+  - scope:
+      path: ""
+      type: Language
+    values:
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true
+      sidebar:
+        nav: "blog"
 
 # ===============================
 # Markdown 渲染

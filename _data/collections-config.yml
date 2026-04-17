@@ -1,0 +1,81 @@
+# Collections 配置说明
+
+## 添加新文章的方法
+
+### 1. 文章命名格式
+所有文章文件必须以日期开头：`YYYY-MM-DD-文章标题.md`
+
+示例：
+- `_TestFramework/unit-test/2026-04-17-pytest.md`
+- `_Anthropology/2026-04-16-kinship.md`
+
+### 2. 文章开头必须有 YAML front matter
+```yaml
+---
+title: "Pytest 入门"
+categories:
+- TestFramework
+- unit-test
+tags:
+- pytest
+- python
+---
+```
+
+### 3. Front matter 字段说明
+| 字段 | 必填 | 说明 |
+|------|------|------|
+| title | ✅ | 文章标题 |
+| categories | ✅ | 分类数组，第一个为 collection 名 |
+| tags | ❌ | 标签数组 |
+| date | ❌ | 日期，默认从文件名提取 |
+| excerpt | ❌ | 文章摘要 |
+
+### 4. 目录结构示例
+```
+├── _TestFramework/           # 测试框架
+│   ├── unit-test/
+│   │   ├── 2026-04-17-pytest.md
+│   │   └── 2026-04-18-unittest.md
+│   ├── e2e-test/
+│   │   └── 2026-05-01-playwright.md
+│   └── api-test/
+│       └── 2026-05-05-requests.md
+├── _Anthropology/            # 人类学
+│   ├── 2026-04-10-kinship.md
+│   └── 2026-04-11-ritual.md
+└── _Language/                # 语言学习
+    ├── 2026-04-05-chinese-grammar.md
+    └── 2026-04-06-english-vocabulary.md
+```
+
+### 5. 添加新分类的方法
+在 `_config.yml` 中的 `collections` 下添加新的 collection：
+
+```yaml
+collections:
+  # ... 现有的 collections ...
+  
+  # 新增示例：
+  DataScience:
+    title: "📊 数据科学"
+    output: true
+    permalink: /:collection/:path/
+```
+
+然后创建对应的文件夹：`_DataScience/`
+
+### 6. 本地运行
+```bash
+# 安装依赖
+gem install jekyll bundler
+bundle install
+
+# 启动本地服务器
+bundle exec jekyll serve
+
+# 或使用
+jekyll serve
+```
+
+网站将在 http://localhost:4000 可访问。
