@@ -1,7 +1,9 @@
 ---
-layout: home
-author_profile: true
+layout: single
 title: "wanfang's Learning Log"
+author_profile: true
+sidebar:
+  nav: "blog"
 header:
   overlay_color: "#5e9c9c"
   overlay_filter: "0.5"
@@ -18,8 +20,7 @@ excerpt: "关于我试图用博客治好健忘症这档事"
 ## 🏷️ 热门标签
 
 <div style="margin: 20px 0;">
-  <!-- 标签会自动生成，这里只是占位说明 -->
-  所有文章都会按标签自动归类，点击右侧的「标签」页面可以查看。
+  所有文章都会按标签自动归类，点击「标签」页面可以查看。
 </div>
 
 ---
