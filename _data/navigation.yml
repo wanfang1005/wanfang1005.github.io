@@ -1,19 +1,15 @@
-# 侧边栏博客导航 - 基于 Collections 动态生成
+# 侧边栏博客导航
 blog:
   - title: "📂 分类目录"
     children:
-      {% for collection in site.collections %}
-      {% if collection.output and collection.label != 'posts' %}
-      - title: "{{ collection.title | default: collection.label }}"
-        url: /{{ collection.label }}/
-      {% endif %}
-      {% endfor %}
+      - title: "🧪 测试框架"
+        url: /TestFramework/
+      - title: "🏛️ 人类学"
+        url: /Anthropology/
+      - title: "🗣️ 语言学习"
+        url: /Language/
   
   - title: "🏷️ 热门标签"
     children:
-      {% for tag in site.tags %}
-      {% if forloop.index <= 10 %}
-      - title: "#{{ tag[0] }}"
-        url: /tags/#{{ tag[0] | slugify }}
-      {% endif %}
-      {% endfor %}
+      - title: "标签云"
+        url: /tags/
