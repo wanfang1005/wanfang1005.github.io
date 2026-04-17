@@ -1,8 +1,7 @@
 ---  
-title: "Pytest 入门"  
+title: "Pytest"  
 categories:  
-- TestFramework  
-- Unit Test  
+- TestFramework   
 tags:  
 - pytest  
 - python  
@@ -10,7 +9,3 @@ tags:
 # 1 测试用例
 ## 1.1 测试函数
 ## 1.2 测试类
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDU0MjE3MDgsLTE5NTk4MzY3MThdfQ
-==
--->

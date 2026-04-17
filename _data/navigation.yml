@@ -1,0 +1,31 @@
+# 主菜单导航栏（顶部显示）
+main:
+  - title: "首页"
+    url: "/"
+  - title: "博客"
+    url: "/year-archive/"
+    children:
+      - title: "分类"
+        url: "/categories/"
+      - title: "标签"
+        url: "/tags/"
+      - title: "归档"
+        url: "/year-archive/"
+  - title: "关于"
+    url: "/about/"
+
+# 侧边栏导航（可选，用于特定页面）
+docs:
+  - title: "快速开始"
+    children:
+      - title: "关于本站"
+        url: "/about/"
+      - title: "分类导航"
+        url: "/categories/"
+  
+  - title: "博客索引"
+    children:
+      - title: "最新文章"
+        url: "/"
+      - title: "按标签浏览"
+        url: "/tags/"

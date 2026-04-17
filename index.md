@@ -1,7 +1,7 @@
 ---
 layout: home
 author_profile: true
-title: "Wanfang's Learning Log"
+title: "wanfang's Learning Log"
 header:
   overlay_color: "#5e9c9c"
   overlay_filter: "0.5"
