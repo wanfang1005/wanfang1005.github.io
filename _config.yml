@@ -1,13 +1,4 @@
 # ===============================
-# Collections 配置
-# ===============================
-collections:
-  TestFramework:
-    title: "🧪 测试框架"
-    output: true
-    permalink: /:collection/:path/
-
-# ===============================
 # 基本信息
 # ===============================
 title: "Wanfang's Learning Log"
@@ -16,12 +7,12 @@ url: "https://wanfang1005.github.io"
 baseurl: ""
 
 # ===============================
-# 主题（固定版本，避免 include_cached 报错）
+# 主题
 # ===============================
 remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 # ===============================
-# 插件（GitHub Pages 支持）
+# 插件
 # ===============================
 plugins:
   - jekyll-include-cache
@@ -47,54 +38,12 @@ paginate: 10
 paginate_path: "/page:num/"
 
 # ===============================
-# 分类 / 标签（自动生成页面）
-# ===============================
-category_archive:
-  type: liquid
-  path: /categories/
-
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# ===============================
 # 默认文章配置
 # ===============================
 defaults:
   - scope:
       path: ""
       type: posts
-    values:
-      layout: single
-      author_profile: true
-      show_date: true
-      read_time: true
-      comments: false
-      share: false
-      related: true
-  - scope:
-      path: ""
-      type: TestFramework
-    values:
-      layout: single
-      author_profile: true
-      show_date: true
-      read_time: true
-      sidebar:
-        nav: "blog"
-  - scope:
-      path: ""
-      type: Anthropology
-    values:
-      layout: single
-      author_profile: true
-      show_date: true
-      read_time: true
-      sidebar:
-        nav: "blog"
-  - scope:
-      path: ""
-      type: Language
     values:
       layout: single
       author_profile: true
@@ -114,7 +63,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # ===============================
-# SEO（可选但推荐）
+# SEO
 # ===============================
 author:
   name: "Wanfang"

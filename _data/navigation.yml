@@ -1,11 +1,11 @@
-# 侧边栏博客导航
+# 侧边栏导航
 blog:
-  - title: "📂 分类目录"
+  - title: "📁 分类目录"
     children:
-      - title: "🧪 测试框架"
-        url: /TestFramework/
+      - title: "分类总览"
+        url: /categories/
   
-  - title: "🏷️ 热门标签"
+  - title: "🏷️ 标签"
     children:
-      - title: "标签云"
+      - title: "标签总览"
         url: /tags/
