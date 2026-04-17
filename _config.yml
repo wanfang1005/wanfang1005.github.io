@@ -6,14 +6,6 @@ collections:
     title: "🧪 测试框架"
     output: true
     permalink: /:collection/:path/
-  Anthropology:
-    title: "🏛️ 人类学"
-    output: true
-    permalink: /:collection/:path/
-  Language:
-    title: "🗣️ 语言学习"
-    output: true
-    permalink: /:collection/:path/
 
 # ===============================
 # 基本信息

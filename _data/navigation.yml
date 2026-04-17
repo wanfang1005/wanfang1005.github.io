@@ -4,10 +4,6 @@ blog:
     children:
       - title: "🧪 测试框架"
         url: /TestFramework/
-      - title: "🏛️ 人类学"
-        url: /Anthropology/
-      - title: "🗣️ 语言学习"
-        url: /Language/
   
   - title: "🏷️ 热门标签"
     children:
