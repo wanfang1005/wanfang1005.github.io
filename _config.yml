@@ -1,36 +1,89 @@
-# _config.yml
-remote_theme: mmistakes/minimal-mistakes
+# ===============================
+# 基本信息
+# ===============================
+title: "Wanfang's Learning Log"
+description: "关于我试图用博客治好健忘症这档事"
+url: "https://wanfang1005.github.io"
+baseurl: ""
 
-title: Wanfang's Learning Log
-description: 关于我试图用博客治好健忘症这档事
+# ===============================
+# 主题（固定版本，避免 include_cached 报错）
+# ===============================
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
-# 插件配置
+# ===============================
+# 插件（GitHub Pages 支持）
+# ===============================
 plugins:
+  - jekyll-include-cache
   - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-gist
   - jemoji
 
-# 主题皮肤
+# ===============================
+# 主题外观
+# ===============================
 minimal_mistakes_skin: "mint"
 
-# 开启搜索
+# ===============================
+# 搜索
+# ===============================
 search: true
 
-# 分页配置（每页显示文章数）
+# ===============================
+# 分页
+# ===============================
 paginate: 10
 paginate_path: "/page:num/"
 
-# 分类归档配置（让主题自动生成分类页面）
+# ===============================
+# 分类 / 标签（自动生成页面）
+# ===============================
 category_archive:
   type: liquid
   path: /categories/
 
-# 侧边栏配置（自动显示分类导航）
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# ===============================
+# 默认文章配置
+# ===============================
 defaults:
   - scope:
       path: ""
-    type: posts
+      type: posts
     values:
-      sidebar:
-        nav: "categories"   # 使用主题内置的分类导航
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+
+# ===============================
+# Markdown 渲染
+# ===============================
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# ===============================
+# SEO（可选但推荐）
+# ===============================
+author:
+  name: "Wanfang"
+
+# ===============================
+# 排除文件
+# ===============================
+exclude:
+  - README.md
+  - node_modules
+  - vendor
